@@ -33,6 +33,15 @@ button.btn.btn-yellow.lg-w-auto.shadow-lg.text-btn a {
   background-color: var(--primary-color);
 }
 
+.bg-trans {
+  background-color: transparent;
+  background: none;
+}
+
+.bg-yellow-light {
+  background-color: #fec852;
+}
+
 button {
     font-family: "Sofia Sans Extra Condensed", sans-serif;
 }

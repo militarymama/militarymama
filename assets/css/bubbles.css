@@ -1,40 +1,156 @@
 @import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Shadows+Into+Light+Two&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
 
+/* Global Styles */
+:root {
+  --primary-color: #067192ea;
+  --primary-transparent: rgba(34, 7, 88, 0.481);
+  --dark-blue: #013646;
+  --light: #fafafa;
+  --lighter: #f5f5f5;
+  --dark: #2c2c2c;
+  --grey: #979797;
+  --light-grey: #eeecec;
+  --dark-grey: #4d4d4d;
+  --darker: #080808;
+  --dark-transparent: #080808c3;
+  --black: #000000;
+  --yellow: #fdd935;
+  --yellow-1: #e9bd43;
+  --yellow-2: #f5b935;
+  --size: clamp(10rem, 1rem + 40vmin, 30rem);
+  --gap: calc(var(--size) / 14);
+  --duration: 60s;
+  --scroll-start: 0;
+  --scroll-end: calc(-100% - var(--gap));
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
+/* ---------- Global Styles */
+
+.text-main {
+  color: var(--primary-color);
+}
+
+.text-sans {
+  font-family: "Lexend", sans-serif;
+  /* text-transform: uppercase; */
+}
+
+.text-tight {
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+}
+
+.text-yellow {
+  color: var(--yellow-1);
+}
+
+.bg-trans {
+  background-color: transparent;
+  background: none;
+}
+
+header {
+    background: #030423;
+}
+
+/* --- Bubble Wrapper */
 
 .wrapper {
   width: 100%;
   /* max-width: 100%; */
-  height: fit-content;
-  background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #030423);
+  height: 60vh;
+  background: #030423;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: absolute;
   overflow: hidden;
-  padding: 20px auto;
+  padding: 0px auto;
 }
+
+/* ------------ Hero */
+span.hero-text {
+  max-width: 100%;
+  background-image: url('your-hero-image.jpg'); /* Optional background image */
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; /* Hide overflowing text during transitions */
+}
+
+.hero-text {
+  top: 170%;
+  transform: translate(-50%, -50%); /* Center the text */
+  text-align: center;
+  color: white; /* Or your preferred text color */
+  opacity: 0; /* Hide by default */
+  transition: opacity 0.5s ease-in-out; /* Smooth transition for fading */
+}
+
+.hero-text.active {
+  opacity: 1; /* Show the active text */
+    top: 170%;
+
+}
+
+.title {
+    color: var(--yellow-2);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.outlined-text {
+    color: #0a4c8a;
+    -webkit-text-stroke: .45px #0f8de8;
+    text-shadow: -1px -1px 0 var(--primary-color), 1px -1px 0 #07386d, -1px 1px 0 #ffffff, 1px 1px 0 var(--dark-blue);
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    text-transform: uppercase;
+}
+
+/* 
+.outlined-text {
+    color: #0a4c8a;
+    -webkit-text-stroke: .45px #59b5ff;
+    text-shadow: -1px -1px 0 var(--primary-color), 1px -1px 0 #07386d, -1px 1px 0 #ffffff, 1px 1px 0 var(--dark-blue);
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    text-transform: uppercase;
+} */
 
 #jumbotron {
     display: flex;
     justify-content: center;
     margin: 0px auto;
 }
-
-/* .wrapper h1 {
-  top: 50%;
+ .wrapper a {
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
-  font-family: sans-serif;
   letter-spacing: 1px;
   word-spacing: 2px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: 888;
+  color: var(--yellow-2);
+  font-weight: 400;
   text-transform: uppercase;
-} */
+  text-decoration: none;
+  font-size: 1.2rem;
+} 
+
+a.btn-outline-yellow,
+.btn-outline-yellow {
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    border-color: var(--yellow-2);
+    font-size: 1.2rem;
+    color: var(--yellow-2);
+}
+
+.btn-outline-yellow:hover {
+  background-color: var(--yellow-2);
+  color: #030423;
+}
+
 
 .wrapper div {
   height: 60px;
@@ -140,6 +256,43 @@ div .dot {
   }
 }
 
+/* ---------------- Header ---------------- */
+
+a.navbar-brand.condensed-font {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+}
+
+a.navbar-brand {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+a.nav-link {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+a.nav-link:hover {
+    color: var(--primary-color);
+}
+
+
+a.nav-link {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+a.nav-link:hover {
+    color: var(--dark-blue);
+}
+
+
 /* ---------- Hamburger */
 label {
   display: block;
@@ -163,7 +316,7 @@ label .hamburger {
   right: 50px;
   width: 30px;
   height: 2px;
-  background: #0a0a0a;
+  background: var(--yellow-2);
   display: block;
   -webkit-transform-origin: center;
   transform-origin: center;
@@ -179,8 +332,8 @@ label .hamburger:before {
   position: absolute;
   display: block;
   width: 100%;
-  height: 100%;
-  background: #0a0a0a;
+  min-height: 100%;
+  background: var(--yellow-2);
 }
 
 label .hamburger:before {
@@ -200,6 +353,7 @@ label input:checked+.menu {
   background-color: #fafafa;
   opacity: .965;
   border-radius: 0;
+  min-height: 100%;
 }
 
 label input:checked+.menu .hamburger {
@@ -240,7 +394,7 @@ label ul {
 }
 
 label a {
-  margin-bottom: 1em;
+  margin-bottom: 20px;
   display: block;
   color: #0a0a0a;
   text-decoration: none;
@@ -248,8 +402,7 @@ label a {
 }
 
 label a:hover {
-  color: #fafafa;
-  box-shadow: inset 100px 0 100px 0 #101c2068;
+  color: var(--primary-color);
   text-align: center;
 }
 
