@@ -28,7 +28,7 @@
 
 <body>
     <header>
-        <div class="row d-flex d-sm-none my-0 mx-auto">
+        <div class="row d-flex d-sm-none my-0 mx-auto fixed-top bg-light shadow-lg">
             <div class="hamburger-nav">
                 <label>
                     <input type="checkbox">
@@ -37,13 +37,14 @@
                     </span>
                     <ul class="hamburger-nav">
                         <li> <a href="#services">Services</a> </li>
-                        <li> <a href="#pricing">Pricing</a> </li>
+                        <li> <a href="#pricing">Prices</a> </li>
+                        <li><a href="#reviews">Reviews</a></li>
                         <li> <a href="#contact">Contact</a> </li>
                     </ul>
                 </label>
             </div>
         </div>
-        <nav class="navbar d-none d-sm-flex bg-light shadow-lg">
+        <nav class="navbar d-none d-sm-flex bg-light shadow-lg fixed-top">
             <div class="container-fluid d-flex me-auto">
                 <a class="navbar-brand condensed-font my-2" href="#">
                     <img src="assets/images/logo.png" alt="Logo" width="50" height="auto"
@@ -58,6 +59,9 @@
                         </li>
                         <li class="nav-item mx-1">
                             <a class="nav-link text-dark" href="#pricing">Pricing</a>
+                        </li>
+                         <li class="nav-item mx-1">
+                            <a class="nav-link text-dark" href="#">Reviews</a>
                         </li>
                         <li class="nav-item mx-1">
                             <a class="nav-link text-dark" href="#">Contact</a>
@@ -247,6 +251,13 @@
 
 <script>
     AOS.init();
+    
+    // Auto-close hamburger menu when link is clicked
+    document.querySelectorAll('.hamburger-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.querySelector('input[type="checkbox"]').checked = false;
+        });
+    });
 </script>
 
 </body>

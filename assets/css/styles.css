@@ -135,7 +135,7 @@ label .menu {
   position: absolute;
   left: -100px;
   top: -100px;
-  z-index: 100;
+  z-index: 1050;
   width: 200px;
   height: 200px;
   -webkit-transition: 0.5s ease-in-out;
@@ -149,12 +149,14 @@ label .hamburger {
   right: 50px;
   width: 30px;
   height: 2px;
-  background: #0a0a0a;
+  background: var(--yellow-2);
   display: block;
   -webkit-transform-origin: center;
   transform-origin: center;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
 }
 
 label .hamburger:after,
@@ -166,7 +168,9 @@ label .hamburger:before {
   display: block;
   width: 100%;
   height: 100%;
-  background: #0a0a0a;
+  background: var(--yellow-2);
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
 }
 
 label .hamburger:before {
@@ -187,6 +191,7 @@ label input:checked + .menu {
   background-color: #fafafa;
   opacity: 0.965;
   border-radius: 0;
+  min-height: 100vh;
 }
 
 label input:checked + .menu .hamburger {
@@ -211,7 +216,7 @@ label input:checked + .menu + ul {
 }
 
 label ul {
-  z-index: 200;
+  z-index: 1060;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -244,11 +249,12 @@ label a:hover {
 
 ul.hamburger-nav {
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 1.2rem;
   letter-spacing: 1.5px;
   list-style: none;
+  margin-top: 200px;
   line-height: 3em;
-  color: #0a0a0a;
+  color: var(--yellow-2);
   font-family: "Sofia Sans Extra Condensed", sans-serif;
 }
 
