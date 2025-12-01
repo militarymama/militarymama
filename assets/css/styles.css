@@ -538,6 +538,11 @@ img#dirtyLaundry {
 }
 
 /* ------------ Reviews */
+.reviews {
+  display: grid;
+  place-items: center;
+}
+
 /*
 =============== 
 Fonts
