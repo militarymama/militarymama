@@ -1,21 +1,12 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const heroTexts = document.querySelectorAll('.hero-text');
+document.addEventListener("DOMContentLoaded", function() {
+  const slider = document.querySelector(".text-slides");
+  const slides = document.querySelectorAll(".text-slides li");
   let currentIndex = 0;
 
-  function showNextText() {
-    // Remove 'active' class from current text
-    heroTexts[currentIndex].classList.remove('active');
-
-    // Increment index, reset if at end
-    currentIndex = (currentIndex + 1) % heroTexts.length;
-
-    // Add 'active' class to next text
-    heroTexts[currentIndex].classList.add('active');
+  function showNextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
   }
 
-  // Initial display of the first text
-  heroTexts[currentIndex].classList.add('active');
-
-  // Change text every 5 seconds (adjust as needed)
-  setInterval(showNextText, 5000);
+  setInterval(showNextSlide, 3000); // Change slide every 3 seconds
 });

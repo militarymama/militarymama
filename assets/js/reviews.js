@@ -2,47 +2,47 @@
 const reviews = [
   {
     id: 1,
-    name: "Anna Johnson",
-    job: "She Uses the Best Products!",
+    customer: "Anna Johnson",
+    service: "She Uses the Best Products!",
     img:
-      "assets/images/detergent.png",
-    text:
-      "Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.",
+      "assets/images/detergent-icon.png",
+    review:
+      "Ayisha uses the best laundry detergent and products. My clothes smell better than my perfume whens she drops them off!",
   },
    {
     id: 2,
-    name: "Shyan Smith",
-    job: "Neat, tidy folding",
+    customer: "Shyan Smith",
+    service: "Neat, tidy folding",
     img:
-      "assets/images/clean-clothes.png",
-    text:
+      "assets/images/folded-clothes.png",
+    review:
       "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
   },
   {
     id: 3,
-    name: "peter jones",
-    job: "intern",
+    name: "Peter Jones",
+    service: "Same Day Laundry is a Life Saver!",
     img:
-      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg",
-    text:
+      "assets/images/clock.png",
+    review:
       "Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.",
   },
   {
     id: 4,
-    name: "bill anderson",
-    job: "the boss",
+    customer: "Bill Anderson",
+    service: "the boss",
     img:
       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg",
-    text:
+    review:
       "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
   },
 ];
 
 // here we'll select items
 const img = document.getElementById('person-img');
-const author = document.getElementById('author');
-const job = document.getElementById('job');
-const info = document.getElementById('info');
+const customer = document.getElementById('customer');
+const service = document.getElementById('service');
+const review = document.getElementById('review');
 
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
@@ -60,9 +60,9 @@ showPerson(currentItem);
 function showPerson(person){
   const item = reviews[person];
   img.src = item.img;
-  author.textContent = item.name;
-  job.textContent = item.job;
-  info.textContent = item.text;
+  customer.textContent = item.customer;
+  service.textContent = item.service;
+  review.textContent = item.review;
 }
 
 //show next person
