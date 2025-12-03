@@ -795,12 +795,12 @@ Reviews
   border-radius: 50%;
   position: relative;
 }
+
 .img-container::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f10e";
-  position: absolute;
-  top: 0;
+  position: fixed;
   left: 0;
   width: 2.5rem;
   height: 2.5rem;
@@ -816,8 +816,8 @@ Reviews
   width: 100%;
   height: 100%;
   background: var(--clr-primary-5);
-  position: absolute;
-  top: -0.25rem;
+  position: fixed;
+  bottom: 6rem;
   right: -0.5rem;
   border-radius: 50%;
 }
@@ -913,21 +913,23 @@ Reviews
   border-radius: 50%;
   position: relative;
 }
+
 .img-container::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f10e";
   position: absolute;
-  top: 0;
   left: 0;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.3rem;
+  height: 2.21rem;
   display: grid;
   place-items: center;
   border-radius: 50%;
+  margin-left: -22px;
+  margin-top: -10px;
+  opacity: .6754;
   transform: translateY(25%);
-  background: var(--clr-primary-5);
-  color: var(--clr-white);
+  color: var(--light);
 }
 .img-container::before {
   content: "";
