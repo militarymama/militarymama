@@ -83,6 +83,15 @@ prevBtn.addEventListener('click', function() {
  showPerson(currentItem);
 });
 
+// auto-rotate reviews every 5 seconds
+setInterval(() => {
+  currentItem++;
+  if (currentItem > reviews.length - 1) {
+    currentItem = 0;
+  }
+  showPerson(currentItem);
+}, 5000);
+
 //show random person
 randomBtn.addEventListener('click', function (){
   
