@@ -104,8 +104,13 @@ a.text-btn,
 .main {
   position: relative;
   max-width: 100%;
+  height: 50vh;
   overflow: hidden;
   background: linear-gradient(180deg, #030423, 5%, #030423, 50%, #030423);
+}
+
+p.text-tight.text-light.mx-3 {
+  font-size: 1rem;
 }
 
 .text-main {
@@ -137,29 +142,13 @@ a.navbar-brand.condensed-font {
     font-size: 0.8rem;
 }
 
-.site-navbar-wrap {
-    position: absolute;
-    z-index: 99;
-    width: 100%;
-    left: 0;
-}
-
-
-.site-mobile-menu .site-mobile-menu-body {
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    position: relative;
-    padding: 20px;
-    height: calc(100vh - 52px);
-    padding-bottom: 150px;
-}
-
 .site-navbar-wrap .site-navbar-top {
     font-size: 0.8rem;
 }
-.site-navbar-top {
+
+/* .site-navbar-top {
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-}
+} */
 
 .phone-nav {
   font-family: "Sofia Sans Extra Condensed", sans-serif;
@@ -746,10 +735,11 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-grey-10);
+  background: none;
   color: var(--clr-grey-1);
   font-size: 0.875rem;
 }
+
 ul {
   list-style-type: none;
 }
@@ -820,10 +810,6 @@ h4 {
   }
 }
 
-main {
-  display: grid;
-  place-items: center;
-}
 
 /*
 =============== 
@@ -1086,4 +1072,5 @@ img.bubbles-left {
   text-align: center;
   margin-left: -30px;
 }
+
 }
