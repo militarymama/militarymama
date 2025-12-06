@@ -3975,3 +3975,8 @@ details{
   opacity: 1;
   visibility: visible;
 }
+
+/* Nav Phone Transition */
+#navPhone {
+  transition: opacity 0.3s, visibility 0.3s;
+}
