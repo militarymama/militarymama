@@ -48,7 +48,7 @@
           </div>
 
         </div>
-        <div class="col-4 text-center align-items-center justify-content-center">
+        <div class="col-4 text-center align-items-center justify-content-center" id="navPhone">
           <a class="text-yellow text-center text-tight" href="tel:9173129946"><i class="fas fa-phone me-1 fw-bold"></i> (917) 312-9946</a>
         </div>
         <div class="col-4"></div>
@@ -290,12 +290,17 @@
   <script>
     // Back to Top Button
     const backToTopBtn = document.getElementById('backToTop');
+    const navPhone = document.getElementById('navPhone');
     
     window.addEventListener('scroll', () => {
       if (window.pageYOffset > 300) {
         backToTopBtn.classList.add('show');
+        navPhone.style.opacity = '0';
+        navPhone.style.visibility = 'hidden';
       } else {
         backToTopBtn.classList.remove('show');
+        navPhone.style.opacity = '1';
+        navPhone.style.visibility = 'visible';
       }
     });
     
