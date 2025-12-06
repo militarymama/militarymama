@@ -24,26 +24,34 @@
 </head>
 
 <body>
-<header class="bg-head container-fluid ">
-    <nav class="site-navbar-top fixed-top">
+  <header class="bg-head container-fluid ">
+    <nav class="site-navbar-top fixed-top container">
       <div class="row d-flex my-2 mx-auto">
         <div class="col-4 text-start justify-content-start align-items-start text-tight text-yellow my-3 mx-auto">
-            <button class="btn btn-main my-2 mx-auto bg-main" type="button" data-bs-toggle="collapse" data-bs-target="#navMenuDropdown" aria-expanded="false" aria-controls="navMenuDropdown">
+          <button class="btn btn-main my-2 mx-auto bg-main" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navMenuDropdown" aria-expanded="false" aria-controls="navMenuDropdown">
             <i class="fas fa-bars fa-2xl text-yellow"></i>
           </button>
           <div class="collapse navbar-collapse bg-main text-light" id="navMenuDropdown">
             <ul class="list-group-horizontal text-center align-items-center my-0 mx-auto py-5">
-              <li class="text-tight text-info fw-bold text-center mb-3 me-5"><a href="#about" class="top-nav">About</a></li>
-              <li class="text-tight text-info fw-bold text-center my-3 me-5"><a href="#prices" class="top-nav">Pricing</a></li>
-              <li class="text-tight text-info fw-bold text-center my-3 me-5"><a href="#contact" class="top-nav">Contact</a></li>
+                <li class="text-tight text-info fw-bold text-center mb-3 me-5"><a href="#" class="top-nav">Home</a>
+              </li>
+              <li class="text-tight text-info fw-bold text-center mb-3 me-5"><a href="#about" class="top-nav">About</a>
+              </li>
+              <li class="text-tight text-info fw-bold text-center my-3 me-5"><a href="#prices"
+                  class="top-nav">Pricing</a></li>
+              <li class="text-tight text-info fw-bold text-center my-3 me-5"><a href="#contact"
+                  class="top-nav">Contact</a></li>
 
             </ul>
 
           </div>
-        
+
         </div>
-        
-        
+        <div class="col-4 text-center align-items-center justify-content-center">
+          <a class="text-yellow text-center text-tight" href="tel:9173129946"><i class="fas fa-phone me-1 fw-bold"></i> (917) 312-9946</a>
+        </div>
+        <div class="col-4"></div>
       </div>
     </nav>
     <div class="row d-flex">
@@ -121,9 +129,9 @@
           </p>
         </div>
       </div>
-      <div class="row text-center d-flex justify-content-center align-items-center my-3 mx-auto py-2 pb-sm-5">
+      <div class="row text-center d-flex justify-content-center align-items-center my-3 mx-auto pb-3 pb-sm-5 hero-btns">
         <div class="col-4">
-          <a class="text-dark btn btn-yellow lg-w-auto w-shadow-lg text-btn" href="#prices">Pricing</a>
+          <a class="text-dark btn btn-yellow sm-w-auto w-shadow-lg text-btn" href="#prices">Pricing</a>
         </div>
         <div class="col-4">
           <a class="btn btn-outline-yellow shadow-lg mx-4 text-btn" href="#contact">Contact</a>
@@ -144,11 +152,10 @@
         <q class="px-4 quote" id="review"></q>
         <!-- previous and next buttons  -->
         <div class="button-container">
-          <button class="prev-btn">
+          <button class="prev-btn me-3 my-3">
             <i class="fas fa-chevron-left"></i>
           </button>
-          <button class="random-btn">Random review</button>
-          <button class="next-btn">
+          <button class="next-btn ms-3 my-3">
             <i class="fas fa-chevron-right"></i>
           </button>
 
@@ -158,91 +165,104 @@
     </section>
 
     <!--Pricing-->
-    <section class="container-fluid bg-main pricing pt-3" id="prices">
-      <div class="row text-center">
+    <section class="container-fluid bg-main pricing p-3 py-sm-4  my-0 mx-auto" id="prices">
+      <div class="row text-center pb-3">
         <div class="col-12">
           <h2 class="display-3 text-tight mt-3 mt-sm-5 pb-4 text-yellow fw-bold">PRICING</h2>
         </div>
       </div>
-      <div class="row row-cols-1 row-cols-sm-2 text-center p-3 p-sm-4 p-md-5">
-        <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm">
-            <div class="card-header py-3">
-              <h4 class="my-0 fw-normal">Free</h4>
-            </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>10 users included</li>
-                <li>2 GB of storage</li>
-                <li>Email support</li>
-                <li>Help center access</li>
-              </ul> <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
-            </div>
+      <div class="row d-flex my-0 mx-auto justify-content-center py-5 mb-3 mb-sm-4 px-sm-3">
+        <div class="col-6 text-center align-items-center justify-content-center my-0 mx-auto">
+          <div class="card h-100 price-tier-card">
+            <h3 class="price-tier text-tight mt-3 text-center text-navy fw-bold">Standard</h3>
+            <p class="standard-tier text-sans mb-3 text-center text-navy">$2.50 per pound</p>
+            <p class="text-tight text-center text-navy text-italic"> 20 pound minimum</p>
+            <p class="text-tight fw-bold text-center text-navy">Next Day Delivery!</p>
           </div>
         </div>
-        <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm">
-            <div class="card-header py-3">
-              <h4 class="my-0 fw-normal">Pro</h4>
-            </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>20 users included</li>
-                <li>10 GB of storage</li>
-                <li>Priority email support</li>
-                <li>Help center access</li>
-              </ul> <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
-            </div>
+        <div class="col-6 text-center align-items-center justify-content-center my-0 mx-auto">
+          <div class="card h-100 price-tier-card">
+            <h3 class="price-tier text-tight mt-3 text-center text-navy fw-bold">Express</h3>
+            <p class="standard-tier text-sans mb-3 text-center text-navy">$3.50 per pound</p>
+            <p class="text-tight text-center text-navy text-italic fw-bold">Order must be placed by 11:00am</p>
+            <p class="text-tight fw-bold text-center text-navy">Same Day Delivery!</p>
           </div>
         </div>
       </div>
-  
+
     </section>
 
     <!--Contact-->
-    <section class="container-fluid bg-head bg-yellow" id="contact">
+    <section class="container-fluid bg-head bg-yellow py-3 py-sm-5" id="contact">
       <div class="row d-flex my-0 mx-auto">
         <div class="col-12 text-center mt-3">
           <h2 class="display-3 text-tight fw-bold">CONTACT</h2>
         </div>
       </div>
-        <div class="col-8 justify-content-center align-items-center text-center offset-2 px-3 px-sm-4">
-          <div class="card h-100 contact-card ">
-            <div class="info-container text-center text-sm-center mt-2 mt-sm-1">
-                <div class="call contact-item my-3 pt-3 pt-sm-0">
-                  <h3 class="info-item  fw-bold text-tight"><i class="fas fa-phone"></i>CALL </h3>
-                    <a href="tel:9173129946" class="text-tight text-dark phone-number">
-                      (917) 312-9946</a>
-                </div>
-                <div class="information text-tight pt-3 contact-item">
-                  <h3 class="fw-bold text-tight info-item ">
-                    <i class="fas fa-map-pin"></i>
-                    SERVICE AREAS:
-                  </h3>
-                  <p class="text-tight text-dark service-areas">The Bronx, NYC, Westchester County</p>
-                </div>
-                <div class="info-item my-3 pt-3 contact-item">
-                  <h3 class="fw-bold text-tight info-item">
-                    <i class="fas fa-envelope"></i> EMAIL</h3>
-                    <a href="mailto:mmcleaningsvcs@yahoo.com" class="text-tight text-dark email-add">
-                      mmcleaningsvcs@yahoo.com</a>
-                </div>
+      <div class="col-8 justify-content-center align-items-center text-center offset-2 px-3 px-sm-4 pb-3">
+        <div class="card h-100 contact-card ">
+          <div class="info-container text-center text-sm-center mt-2 mt-sm-1">
+            <div class="call contact-item my-3 pt-3 pt-sm-0">
+              <h3 class="info-item  fw-bold text-tight"><i class="fas fa-phone"></i>CALL </h3>
+              <a href="tel:9173129946" class="text-tight text-dark phone-number">
+                (917) 312-9946</a>
+            </div>
+            <div class="information text-tight pt-3 contact-item">
+              <h3 class="fw-bold text-tight info-item ">
+                <i class="fas fa-map-pin"></i>
+                SERVICE AREAS:
+              </h3>
+              <p class="text-tight text-dark service-areas">The Bronx, NYC, Westchester County</p>
+            </div>
+            <div class="info-item my-3 pt-3 contact-item">
+              <h3 class="fw-bold text-tight info-item">
+                <i class="fas fa-envelope"></i> EMAIL
+              </h3>
+              <a href="mailto:mmcleaningsvcs@yahoo.com" class="text-tight text-dark email-add">
+                mmcleaningsvcs@yahoo.com</a>
+            </div>
 
-                <div class="my-3 pt-3 contact-item">
-                  <h3 class="fw-bold text-tight info-item"><i class="fas fa-clock"></i>HOURS </h3>
-                  <p class="text-tight text-dark mb-0 pb-0 hours">MON-FRI: 8AM - 8PM</p>
-                  <p class="text-tight hours">Closed Thursdays & Sundays</p>
-                </div>
-              </div>
+            <div class="my-3 pt-3 contact-item">
+              <h3 class="fw-bold text-tight info-item"><i class="fas fa-clock"></i>HOURS </h3>
+              <p class="text-tight text-dark mb-0 pb-0 hours">MON-FRI: 8AM - 8PM</p>
+              <p class="text-tight hours">Closed Thursdays & Sundays</p>
             </div>
           </div>
         </div>
       </div>
+      </div>
+      </div>
     </section>
 
-
+    <!--Footer-->
+    <div class="container-fluid bg-main">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 bg-main">
+        <div class="col-md-4 d-flex align-items-center"> 
+          <a href="#about"
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="LOGO"> 
+            <img
+              class="img-fluid" width="50" height="24" aria-hidden="true" src="assets/images/logo.png">
+           </a> <span class="mb-3 mb-md-0 text-light text-tight fw-bold">Military Mama Laundry Service</span> </div>
+                 <div class="col-4 text-center align-items-center justify-content-center">
+          <a class="text-yellow text-center text-tight fw-bold" href="tel:9173129946"><i class="fas fa-phone me-1"></i> (917) 312-9946</a>
+        </div>
+        <ul class="nav col-4 justify-content-end list-unstyled d-flex">
+   
+                 <li class="list-item mx-2">
+            <a class="text-tight text-main fw-bold" href="#">About</a>
+            </li>
+              <li class="list-item mx-2">
+            <a class="text-tight text-main fw-bold" href="#about">Services</a>
+            </li>
+            <li class="list-item mx-2">
+            <a class="text-tight text-main fw-bold" href="#about">Pricing</a>
+            </li>
+                       <li class="list-item mx-2">
+            <a class="text-tight text-main fw-bold" href="#about">Contact</a>
+            </li>
+        </ul>
+      </footer>
+    </div>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -262,8 +282,5 @@
   <script src="assets/js/reviews.js"></script>
   <script src="assets/js/text.js"></script>
 
-
-
 </body>
-
 </html>
