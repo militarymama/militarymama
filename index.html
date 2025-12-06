@@ -24,31 +24,26 @@
 </head>
 
 <body>
-  <header class="bg-head container-fluid ">
+<header class="bg-head container-fluid ">
     <nav class="site-navbar-top fixed-top">
       <div class="row d-flex my-2 mx-auto">
-        <div class="col-4 text-start text-tight text-yellow my-3 mx-auto">
-          <a href="tel:9173129946" class="text-tight text-yellow">
-            <i class="fas fa-phone me-2 fa-sm"></i>
-            <span class="d-sm-inline-block">(917) 312-9946</span>
-          </a>
-        </div>
-        <div class="col-4"></div>
-        <div class="col-4 justify-content-end align-items-end text-end" id="toggle">
-          <button class="btn btn-main my-2 mx-auto bg-main" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-            <i class="fas fa-bars fa-2xl text-info"></i>
+        <div class="col-4 text-start justify-content-start align-items-start text-tight text-yellow my-3 mx-auto">
+            <button class="btn btn-main my-2 mx-auto bg-main" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+            <i class="fas fa-bars fa-2xl text-yellow"></i>
           </button>
           <div class="collapse navbar-collapse bg-main text-light" id="collapseWidthExample">
             <ul class="list-group-horizontal text-center align-items-center my-0 mx-auto py-5">
-              <li class="text-tight text-info fw-bold text-center my-3 me-5"><a href="#about">About</a></li>
-              <li class="text-tight text-info fw-bold text-center my-3 me-5"><a href="#prices">Pricing</a></li>
-              <li class="text-tight text-info fw-bold text-center my-3 me-5"><a href="#contact">Contact</a></li>
+              <li class="text-tight text-info fw-bold text-center my-3 me-5"><a href="#about" class="top-nav">About</a></li>
+              <li class="text-tight text-info fw-bold text-center my-3 me-5"><a href="#prices" class="top-nav">Pricing</a></li>
+              <li class="text-tight text-info fw-bold text-center my-3 me-5"><a href="#contact" class="top-nav">Contact</a></li>
 
             </ul>
 
           </div>
+        
         </div>
+        
+        
       </div>
     </nav>
     <div class="row d-flex">
@@ -59,7 +54,7 @@
         <h2 class="display-6 text-tight ms-3 text-yellow ">Laundry Services</h2>
       </div>
       <div class="col-5 justify-content-end align-items-end my-0 mx-auto">
-        <div class="logo-wrapper mt-5 pt-5 mx-auto">
+        <div class="logo-wrapper">
           <img src="assets/images/logo.png" class="img-fluid">
 
         </div>
@@ -100,9 +95,9 @@
       <div class="bubble bubble-28"></div>
       <div class="bubble bubble-29"></div>
       <div class="bubble bubble-30"></div>
-      <div class="row d-flex my-3 mx-auto mt-5 pt-3" id="about">
+      <div class="row d-flex my-3 mx-auto" id="about">
         <div class="col-12 justify-content-center align-items-center text-center" role="banner">
-          <h3 class="display-6 text-tight py-3" id="hero-start">
+          <h3 class="display-6 text-tight pt-3 fw-bold" id="hero-start">
             <span class="text-yellow hero-fade me-1" data-aos="fade-in" data-aos-duration="2500"
               data-aos-delay="1000">Pick Up <i class="fas fa-chevron-right hero-icon"></i></span>
             <span class="text-light mx-1" data-aos="fade-in" data-aos-duration="2500" data-aos-delay="1200">
@@ -116,7 +111,7 @@
         </div>
       </div>
       <div class="row d-flex my-3 pb-3 mx-auto">
-        <div class="col-12 text-center">
+        <div class="col-12 text-center lead-text">
           <p class="text-tight text-light mx-3 mt-3">
             Welcome to Military Mama Laundry Services, where laundry goes from <span class="oh-no">"Oh no…”</span>
             to <span class="oh-wow">“Oh WOW!”</span>
@@ -215,13 +210,9 @@
           <h2 class="display-3 text-tight fw-bold">CONTACT</h2>
         </div>
       </div>
-      <div class="row d-flex my-0 mx-auto pb-5">
-        <div class="col-12 col-sm-6 justify-content-end align-items-end text-end d-none d-sm-flex">
-          <img src="assets/images/dirty-laundry.png" class="img-fluid">
-        </div>
-        <div class="col-12 col-sm-6">
-          <div class="card h-100 contact-card">
-            <div class="info-container text-center text-sm-start mt-2 mt-sm-1">
+        <div class="col-8 justify-content-center align-items-center text-center offset-2 px-3 px-sm-4">
+          <div class="card h-100 contact-card ">
+            <div class="info-container text-center text-sm-center mt-2 mt-sm-1">
                 <div class="call contact-item my-3 pt-3 pt-sm-0">
                   <h3 class="info-item  fw-bold text-tight"><i class="fas fa-phone"></i>CALL </h3>
                     <a href="tel:9173129946" class="text-tight text-dark phone-number">
@@ -252,6 +243,8 @@
         </div>
       </div>
     </section>
+
+
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

@@ -130,6 +130,55 @@ p.text-tight.text-light.mx-3 {
 }
 
 /* ---------------- Header ---------------- */
+.logo-wrapper {
+    /* margin-right: 20px; */
+    z-index: 100000;
+    position: absolute;
+    max-width: 125px;
+    right: 0;
+    /* top: 0; */
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+button.btn.btn-main.my-2.mx-auto.bg-main {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+ul.list-group-horizontal.text-center.align-items-center.my-0.mx-auto.py-5 {
+    position: fixed;
+    left: 0;
+    background-color: #030423b8;
+    /* margin-top: -20px; */
+    left: 30;
+    top: 60px;
+    z-index: 0;
+    /* width: 400px; */
+    /* text-align: start; */
+}
+
+i.fas.fa-bars.fa-2xl.text-yellow {
+  background-color: var(--dark-transparent);
+  border-radius: 15px;
+}
+
+a.top-nav {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+a.top-nav:hover {
+  color: var(--accent-color);
+  font-size: 1.3rem;
+}
+
+i.fas.fa-bars.fa-2xl.text-info {
+    /* position: absolute; */
+}
+
 a.navbar-brand.condensed-font {
   font-family: "Sofia Sans Extra Condensed", sans-serif;
 }
@@ -161,14 +210,6 @@ a.phone-nav:hover {
 a.navbar-brand {
   text-transform: uppercase;
   font-weight: 600;
-}
-
-a.nav-link {
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
-  font-size: 15px;
-  text-transform: uppercase;
-  color: var(--primary-color);
-  font-weight: 500;
 }
 
 li.nav-item:hover >
@@ -1105,7 +1146,7 @@ h3.info-item {
 .main {
   position: relative;
   max-width: 100%;
-  min-height: 80vh;
+  min-height: 50vh;
   overflow: hidden;
   background: linear-gradient(180deg, #030423, 5%, #030423, 50%, #030423);
 }
@@ -1119,5 +1160,11 @@ h3#hero-start {
 .contact-item {
   font-size: 1.351rem;
   text-align: center;
+}
+.lead-text {
+  margin: 50px auto;
+}
+h3#hero-start {
+  margin: 30px auto;
 }
 }
