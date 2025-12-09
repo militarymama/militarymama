@@ -133,16 +133,19 @@ p.text-tight.text-light.mx-3 {
   font-size: 1rem;
 }
 
-span.oh-no {
+.oh-no {
   font-weight: 800;
   color: var(--yellow-2);
   text-transform: lowercase;
+  font-size: 1rem;
 }
 
-span.oh-wow {
+.oh-wow {
   font-weight: 800;
   color: var(--primary-color);
   text-transform: uppercase;
+    font-size: 1rem;
+    margin: 0 auto;
 }
 
 .text-main {
@@ -768,6 +771,16 @@ img#dirtyLaundry {
   width: 80px;
 }
 
+/* --------------- About */
+.about-text {
+  font-size: 14px;
+  letter-spacing: -.251px;
+}
+
+p.text-hand.text-calm.catchline.aos-init.aos-animate {
+  font-size: 1.2rem;
+}
+
 /* ------------ Reviews */
 .reviews {
   display: grid;
@@ -1238,7 +1251,6 @@ ul.hamburger-nav {
   letter-spacing: 1.5px;
   list-style: none;
   margin-top: 200px;
-  line-height: 3em;
   color: var(--yellow-2);
   font-family: "Sofia Sans Extra Condensed", sans-serif;
 }
@@ -1638,12 +1650,6 @@ h4 {
   body {
     font-size: 1rem;
   }
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
-  }
 }
 /*  global classes */
 
@@ -2018,9 +2024,7 @@ h3#hero-start {
   font-size: 1.351rem;
   text-align: center;
 }
-.lead-text {
-  margin: 20px auto;
-}
+
 h3#hero-start {
   margin: 30px auto;
 }
@@ -2822,8 +2826,8 @@ q {
 
 .text-hand {
     font-family: "Just Another Hand", cursive;
-     font-weight: 500;
-    font-size: 1.2rem;
+    font-weight: 500;
+    font-size: 1.1rem;
     letter-spacing: 1px;
 }
 
