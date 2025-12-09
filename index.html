@@ -34,7 +34,7 @@
           </button>
           <div class="collapse navbar-collapse bg-main text-light" id="navMenuDropdown">
             <ul class="list-group-horizontal text-center align-items-center my-0 mx-auto py-5">
-                <li class="text-tight text-info fw-bold text-center mb-3 me-5"><a href="#" class="top-nav">Home</a>
+              <li class="text-tight text-info fw-bold text-center mb-3 me-5"><a href="#" class="top-nav">Home</a>
               </li>
               <li class="text-tight text-info fw-bold text-center mb-3 me-5"><a href="#about" class="top-nav">About</a>
               </li>
@@ -49,7 +49,9 @@
 
         </div>
         <div class="col-4 text-center align-items-center justify-content-center" id="navPhone">
-          <a class="text-yellow text-center text-tight" href="tel:9173129946"><i class="fas fa-phone me-1 fw-bold"></i> (917) 312-9946</a>
+          <a class="text-yellow text-center text-tight" href="tel:9173129946">
+            <i class="fas fa-phone fw-bold me-1"></i>
+            (917) 312-9946</a>
         </div>
         <div class="col-4"></div>
       </div>
@@ -203,7 +205,7 @@
         <div class="card h-100 contact-card ">
           <div class="info-container text-center text-sm-center mt-2 mt-sm-1">
             <div class="call contact-item my-3 pt-3 pt-sm-0">
-              <h3 class="info-item  fw-bold text-tight"><i class="fas fa-phone"></i>CALL </h3>
+              <h3 class="info-item  fw-bold text-tight"><i class="fas fa-phone me-1"></i> CALL </h3>
               <a href="tel:9173129946" class="text-tight text-dark phone-number">
                 (917) 312-9946</a>
             </div>
@@ -223,9 +225,9 @@
             </div>
 
             <div class="my-3 pt-3 contact-item">
-              <h3 class="fw-bold text-tight info-item"><i class="fas fa-clock"></i>HOURS </h3>
-              <p class="text-tight text-dark mb-0 pb-0 hours">MON-FRI: 8AM - 8PM</p>
-              <p class="text-tight hours">Closed Thursdays & Sundays</p>
+              <h3 class="fw-bold text-tight info-item"><i class="fas fa-clock me-1"></i>HOURS </h3>
+              <p class="text-tight text-dark mb-0 pb-0 hours">MON-SUN: 8AM - 8PM</p>
+              <p class="text-tight hours text-italic">Closed Thursdays & Sundays</p>
             </div>
           </div>
         </div>
@@ -237,29 +239,29 @@
     <!--Footer-->
     <div class="container-fluid bg-main">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 bg-main">
-        <div class="col-md-4 d-flex align-items-center"> 
-          <a href="#about"
-            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="LOGO"> 
-            <img
-              class="img-fluid" width="50" height="24" aria-hidden="true" src="assets/images/logo.png">
-           </a> <span class="mb-3 mb-md-0 text-light text-tight fw-bold">Military Mama Laundry Service</span> </div>
-                 <div class="col-4 text-center align-items-center justify-content-center">
-          <a class="text-yellow text-center text-tight fw-bold" href="tel:9173129946"><i class="fas fa-phone me-1"></i> (917) 312-9946</a>
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="#about" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="LOGO">
+            <img class="img-fluid" width="50" height="24" aria-hidden="true" src="assets/images/logo.png">
+          </a> <span class="mb-3 mb-md-0 text-light text-tight fw-bold">Military Mama Laundry Service</span>
+        </div>
+        <div class="col-4 text-center align-items-center justify-content-center">
+          <a class="text-yellow text-center text-tight fw-bold" href="tel:9173129946"><i class="fas fa-phone me-1"></i>
+            (917) 312-9946</a>
         </div>
         <ul class="nav col-4 justify-content-end list-unstyled d-flex">
-   
-                 <li class="list-item mx-2">
+
+          <li class="list-item mx-2">
             <a class="text-tight text-main fw-bold" href="#">About</a>
-            </li>
-              <li class="list-item mx-2">
+          </li>
+          <li class="list-item mx-2">
             <a class="text-tight text-main fw-bold" href="#about">Services</a>
-            </li>
-            <li class="list-item mx-2">
+          </li>
+          <li class="list-item mx-2">
             <a class="text-tight text-main fw-bold" href="#about">Pricing</a>
-            </li>
-                       <li class="list-item mx-2">
+          </li>
+          <li class="list-item mx-2">
             <a class="text-tight text-main fw-bold" href="#about">Contact</a>
-            </li>
+          </li>
         </ul>
       </footer>
     </div>
@@ -286,12 +288,12 @@
 
   <script src="assets/js/reviews.js"></script>
   <script src="assets/js/text.js"></script>
-  
+
   <script>
     // Back to Top Button
     const backToTopBtn = document.getElementById('backToTop');
     const navPhone = document.getElementById('navPhone');
-    
+
     window.addEventListener('scroll', () => {
       if (window.pageYOffset > 300) {
         backToTopBtn.classList.add('show');
@@ -303,11 +305,12 @@
         navPhone.style.visibility = 'visible';
       }
     });
-    
+
     backToTopBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
 
 </body>
+
 </html>

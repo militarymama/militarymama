@@ -1926,6 +1926,12 @@ a.phone-number,
   font-size: 1rem;
 }
 
+.hours {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  color: var(--dark-grey);
+}
+
 img.bubbles-left {
   max-width: 100%;
   height: 350px;
