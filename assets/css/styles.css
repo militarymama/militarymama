@@ -2116,8 +2116,8 @@ a.top-nav:hover {
   font-size: 1.3rem;
 }
 
-i.fas.fa-bars.fa-2xl.text-info {
-    /* position: absolute; */
+p.text-tight.aos-init.aos-animate {
+  font-size: 1.1rem;
 }
 
 a.navbar-brand.condensed-font {
@@ -2831,8 +2831,8 @@ q {
 .text-amaranth {
   text-transform: lowercase;
   letter-spacing: 2px;
-  font-weight: 300;
-  font-size: 1.4rem;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 
 .text-happy {
@@ -3520,12 +3520,6 @@ h4 {
   }
   body {
     font-size: 1rem;
-  }
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
   }
 }
 /*  global classes */
