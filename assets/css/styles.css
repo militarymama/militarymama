@@ -168,6 +168,10 @@ p.text-tight.text-light.mx-3 {
   color: var(--candy);
 }
 
+.text-gray {
+  color: var(--dark);
+}
+
 .text-green {
   color: var(--droid-green)
 }
