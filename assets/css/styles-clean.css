@@ -1,0 +1,678 @@
+:root {
+  --primary-color: #46bfe4;
+  --blue-hov: #1794ba;
+  --calm: rgb(123, 176, 245);
+  --navy: #0b0224;
+  --accent-color: #1ceaed;
+  --amaranth: #e52b50;
+  --light: #fafafa;
+  --dark: #2c2c2c;
+  --dark-grey: #393939;
+  --dark-transparent: #090432dd;
+  --yellow: #fdd935;
+  --yellow-1: #e9bd43;
+  --yellow-2: #f5b935;
+  --yellow-hov: #9e6d03;
+  --droid-green: #32de84;
+  --candy: #e89eb8;
+  --primary-font: "Sofia Sans Extra Condensed", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-main {
+  background: linear-gradient(180deg, #000813, 5%, #0a012a, 50%, #030423);
+}
+.bg-head {
+  background-color: #030423;
+}
+.bg-yellow {
+  background-color: var(--yellow-2);
+}
+
+button {
+  font-family: var(--primary-font);
+}
+
+.btn-yellow {
+  background-color: var(--yellow-2);
+}
+.btn-yellow:hover {
+  background-color: var(--yellow);
+}
+
+.btn-outline-yellow {
+  font-family: var(--primary-font);
+  border-color: var(--yellow-2);
+  font-size: 1.2rem;
+  color: var(--yellow-2);
+}
+.btn-outline-yellow:hover {
+  background-color: var(--yellow-2);
+}
+
+.text-btn {
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.main {
+  position: relative;
+  max-width: 100%;
+  min-height: 50vh;
+  overflow: hidden;
+  background: linear-gradient(180deg, #030423, 5%, #030423, 50%, #030423);
+}
+
+ul {
+  list-style: none;
+}
+
+.text-main {
+  color: var(--primary-color);
+}
+.text-navy {
+  color: var(--navy);
+}
+.text-calm {
+  color: var(--calm);
+}
+.text-candy {
+  color: var(--candy);
+}
+.text-green {
+  color: var(--droid-green);
+}
+.text-yellow {
+  color: var(--yellow-1);
+}
+.text-accent {
+  color: var(--accent-color);
+}
+
+.text-italic {
+  color: var(--dark);
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.text-sans {
+  font-family: "Montserrat", sans-serif;
+}
+.text-tight {
+  font-family: var(--primary-font);
+}
+
+.text-hand {
+  font-family: "Just Another Hand", cursive;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.text-amaranth {
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--amaranth);
+}
+
+.text-engrave {
+  font-family: "Just Another Hand", cursive;
+  font-weight: 400;
+  background-color: var(--dark);
+  background-clip: text;
+  color: transparent;
+  font-size: 1.15rem;
+  letter-spacing: 1.146px;
+  text-transform: uppercase;
+}
+
+.logo-wrapper {
+  z-index: 100000;
+  position: absolute;
+  max-width: 125px;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+button.btn.btn-main.my-2.mx-auto.bg-main {
+  position: fixed;
+  left: 20px;
+  top: 0;
+}
+
+ul.list-group-horizontal.text-center.align-items-center.my-0.mx-auto.py-5 {
+  position: fixed;
+  left: 20px;
+  background-color: #030423b8;
+  top: 60px;
+  z-index: 0;
+}
+
+i.fas.fa-bars.fa-2xl.text-yellow {
+  background-color: var(--dark-transparent);
+  border-radius: 15px;
+}
+
+a.top-nav {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+a.top-nav:hover {
+  color: var(--accent-color);
+  font-size: 1.3rem;
+}
+
+.site-navbar-top {
+  font-size: 14px;
+}
+
+h3#hero-start {
+  font-size: 1.5rem;
+}
+.hero-btns {
+  font-size: 1.2rem;
+}
+
+.hero-icon {
+  font-size: 1.2rem;
+  margin: 5px;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -80px;
+  border-radius: 50%;
+  opacity: 0.2;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 255, 255, 0.975),
+    rgba(255, 255, 255, 0.1) 60%,
+    rgba(255, 255, 255, 0) 90%
+  );
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15),
+    inset 0 5px 15px rgba(255, 255, 255, 0.5);
+  mix-blend-mode: screen;
+  animation: rise 12s infinite ease-in;
+  animation-delay: -12s !important;
+}
+
+.bubble-1 {
+  left: 5%;
+  width: 12px;
+  height: 12px;
+  animation-duration: 14s;
+}
+.bubble-2 {
+  left: 10%;
+  width: 18px;
+  height: 18px;
+  animation-duration: 16s;
+}
+.bubble-3 {
+  left: 15%;
+  width: 8px;
+  height: 8px;
+  animation-duration: 11s;
+}
+.bubble-4 {
+  left: 20%;
+  width: 25px;
+  height: 25px;
+  animation-duration: 20s;
+}
+.bubble-5 {
+  left: 25%;
+  width: 14px;
+  height: 14px;
+  animation-duration: 13s;
+}
+.bubble-6 {
+  left: 30%;
+  width: 30px;
+  height: 30px;
+  animation-duration: 22s;
+}
+.bubble-7 {
+  left: 35%;
+  width: 10px;
+  height: 10px;
+  animation-duration: 10s;
+}
+.bubble-8 {
+  left: 40%;
+  width: 20px;
+  height: 20px;
+  animation-duration: 15s;
+}
+.bubble-9 {
+  left: 45%;
+  width: 16px;
+  height: 16px;
+  animation-duration: 17s;
+}
+.bubble-10 {
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  animation-duration: 26s;
+}
+.bubble-11 {
+  left: 55%;
+  width: 12px;
+  height: 12px;
+  animation-duration: 12s;
+}
+.bubble-12 {
+  left: 60%;
+  width: 6px;
+  height: 6px;
+  animation-duration: 9s;
+}
+.bubble-13 {
+  left: 65%;
+  width: 28px;
+  height: 28px;
+  animation-duration: 18s;
+}
+.bubble-14 {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-duration: 16s;
+}
+.bubble-15 {
+  left: 75%;
+  width: 14px;
+  height: 14px;
+  animation-duration: 12s;
+}
+.bubble-16 {
+  left: 80%;
+  width: 26px;
+  height: 26px;
+  animation-duration: 19s;
+}
+.bubble-17 {
+  left: 85%;
+  width: 34px;
+  height: 34px;
+  animation-duration: 21s;
+}
+.bubble-18 {
+  left: 90%;
+  width: 50px;
+  height: 50px;
+  animation-duration: 28s;
+}
+.bubble-19 {
+  left: 22%;
+  width: 18px;
+  height: 18px;
+  animation-duration: 15s;
+}
+.bubble-20 {
+  left: 48%;
+  width: 55px;
+  height: 55px;
+  animation-duration: 30s;
+}
+.bubble-21 {
+  left: 12%;
+  width: 10px;
+  height: 10px;
+  animation-duration: 11s;
+}
+.bubble-22 {
+  left: 32%;
+  width: 24px;
+  height: 24px;
+  animation-duration: 17s;
+}
+.bubble-23 {
+  left: 72%;
+  width: 14px;
+  height: 14px;
+  animation-duration: 13s;
+}
+.bubble-24 {
+  left: 58%;
+  width: 20px;
+  height: 20px;
+  animation-duration: 16s;
+}
+.bubble-25 {
+  left: 27%;
+  width: 16px;
+  height: 16px;
+  animation-duration: 14s;
+}
+.bubble-26 {
+  left: 17%;
+  width: 28px;
+  height: 28px;
+  animation-duration: 19s;
+}
+.bubble-27 {
+  left: 83%;
+  width: 22px;
+  height: 22px;
+  animation-duration: 18s;
+}
+.bubble-28 {
+  left: 93%;
+  width: 18px;
+  height: 18px;
+  animation-duration: 12s;
+}
+.bubble-29 {
+  left: 51%;
+  width: 44px;
+  height: 44px;
+  animation-duration: 24s;
+}
+.bubble-30 {
+  left: 7%;
+  width: 14px;
+  height: 14px;
+  animation-duration: 13s;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(-350px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.251px;
+}
+
+.review-wrapper {
+  width: 80vw;
+  max-width: var(--fixed-width);
+}
+
+.review {
+  padding: 1.5rem 2rem;
+  transition: var(--transition);
+  text-align: center;
+}
+
+.img-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: var(--dark-transparent);
+  border-radius: 50%;
+  margin: 0px auto;
+}
+
+#person-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+
+.img-container::after {
+  content: "\f10e";
+  position: fixed;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transform: translateY(25%);
+  background: var(--navy);
+  color: var(--clr-white);
+}
+
+.img-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  bottom: 6rem;
+  right: -0.5rem;
+  border-radius: 50%;
+}
+
+#customer {
+  margin-bottom: 0.25rem;
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.prev-btn,
+.next-btn,
+.pause-btn {
+  color: var(--navy);
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+#service {
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  color: var(--clr-primary-5);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+#info {
+  margin-bottom: 0.75rem;
+}
+.prev-btn,
+.next-btn {
+  color: var(--navy);
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.prev-btn:hover,
+.next-btn:hover {
+  color: var(--clr-primary-5);
+}
+
+.prev-btn:hover,
+.next-btn:hover,
+.pause-btn:hover {
+  color: var(--dark-transparent);
+}
+
+.price-tier-card {
+  background-color: var(--yellow-1);
+  max-width: 250px;
+  height: 220px;
+}
+
+#contact {
+  max-width: 100%;
+  height: auto;
+  background: url("../images/soap-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+p.hours,
+a.email-add,
+.service-areas,
+a.phone-number,
+.contact-item > p {
+  font-size: 1rem;
+}
+
+h3.info-item {
+  font-size: 1.351rem;
+}
+
+.info-item > h3 > i {
+  margin: 0px 5px;
+}
+
+.card.contact-card {
+  background-color: #fafafa30;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+
+.typewriter-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  max-width: fit-content;
+    margin: 0 auto;
+}
+
+.typewriter-text {
+  font-family: "Just Another Hand", cursive;
+  font-weight: 400;
+  background-color: var(--yellow-hov);
+  background-clip: text;
+  color: transparent;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+ overflow: hidden; /* Ensures text is hidden until typed */
+  white-space: nowrap; /* Prevents text from wrapping */
+  margin: 0 auto; /* Centers the text horizontally */
+  border-right: 2px solid var(--yellow-hov); /* Cursor */
+  margin-bottom: 20px;
+  animation: typing 12s steps(50, end) infinite,
+  blink-caret 0.75s step-end infinite; /* Blinking cursor */
+}
+
+/* Keyframes for the typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Keyframes for the blinking cursor animation */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: var(--yellow-hov);
+  }
+  100% {
+    border-color: transparent;
+  } /* Make cursor invisible at halfway point */
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--yellow-2);
+  color: var(--dark);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top:hover {
+  background-color: var(--yellow);
+  transform: translateY(-3px);
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#navPhone {
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+@media (min-width: 600px) {
+  .main,
+  #home {
+    position: relative;
+    max-width: 100%;
+    min-height: 30vh;
+    overflow: hidden;
+    background: linear-gradient(180deg, #030423, 5%, #030423, 50%, #030423);
+  }
+  .price-tier-card {
+    max-width: 100%;
+    height: auto;
+  }
+  .about-text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  .about-text {
+    font-size: 1rem;
+    letter-spacing: -0.251px;
+  }
+}
+
+@media (min-width: 820px) {
+  h3#hero-start {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 30px auto;
+  }
+  .contact-item {
+    font-size: 1.351rem;
+    text-align: center;
+  }
+}
