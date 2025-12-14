@@ -45,6 +45,10 @@ ul {
   list-style: none;
 }
 
+body {
+  background-color: #030423;
+}
+
 .bg-main {
   background: linear-gradient(180deg, #000813, 5%, #0a012a, 50%, #030423);
 }
@@ -62,16 +66,11 @@ ul {
 }
 
 .bg-trans {
-  background-color: transparent;
-  background: none;
+  background-color: var(--dark-transparent);
 }
 
 .bg-yellow-light {
   background-color: #fec852;
-}
-
-.bg-trans {
-  background-color: var(--dark-transparent);
 }
 
 button {
@@ -206,48 +205,7 @@ p.text-tight.text-light.mx-3 {
   color: var(--accent-color);
 }
 
-.img-wrapper {
-  max-width: 60%;
-  height: auto;
-  overflow: hidden;
-}
-
-img#logoImg {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Bubble animation */
-@keyframes rise {
-  0% {
-    transform: translateY(0) scale(1);
-    opacity: 0.2;
-  }
-  100% {
-    transform: translateY(-350px) scale(1.2);
-    opacity: 0;
-  }
-}
-
 /* ---------------- Header ---------------- */
-body {
-  background-color: #030423;
-}
-
-button.btn.btn-main.my-2.mx-auto.bg-main {
-  position: fixed;
-  left: 20px;
-  top: 0;
-}
-
-.site-navbar-top {
-  font-size: 14px;
-}
-
-li.nav-item:hover > a.nav-link:hover {
-  color: var(--blue-hov);
-}
-
 .logo-wrapper {
   z-index: 100000;
   position: absolute;
@@ -255,6 +213,12 @@ li.nav-item:hover > a.nav-link:hover {
   right: 0;
   margin-top: 20px;
   margin-right: 10px;
+}
+
+button.btn.btn-main.my-2.mx-auto.bg-main {
+  position: fixed;
+  left: 20px;
+  top: 0;
 }
 
 ul.list-group-horizontal.text-center.align-items-center.my-0.mx-auto.py-5 {
@@ -285,6 +249,10 @@ a.navbar-brand.condensed-font {
   font-family: "Sofia Sans Extra Condensed", sans-serif;
 }
 
+.site-navbar-top {
+  font-size: 14px;
+}
+
 a.phone-nav:hover {
   color: var(--yellow-hov);
 }
@@ -294,369 +262,22 @@ a.navbar-brand {
   font-weight: 600;
 }
 
+li.nav-item:hover > a.nav-link:hover {
+  color: var(--blue-hov);
+}
+
 a.nav-link:hover {
   color: var(--yellow-hov);
 }
 
-#heroTitleText {
-  text-transform: uppercase;
-  letter-spacing: -10;
-}
-
-.img-wrapper {
-  max-width: 60%;
-  height: auto;
-  overflow: hidden;
-}
-
-img#logoImg {
-  max-width: 100%;
-  height: auto;
-}
-
-.img-container {
-  position: relative;
-  background-color: var(--dark-transparent);
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: 0 auto;
-  margin-bottom: 1.5rem;
-}
-
-.img-container::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f10e";
-  position: absolute;
-  left: 0;
-  width: 2.3rem;
-  height: 2.21rem;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  margin-left: -12px;
-  margin-top: -35px;
-  opacity: 0.89754;
-  transform: translateY(25%);
-  color: var(--light);
-}
-
-.img-container::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: none;
-  position: absolute;
-  top: -0.25rem;
-  right: -0.5rem;
-  border-radius: 50%;
-}
-
-/* --------------- About */
-.about-text {
-  font-size: 14px;
-  line-height: 1.5;
-  letter-spacing: -0.251px;
-}
-
-.lead-text {
-  line-height: normal;
-  padding-bottom: 2.5px;
-}
-
-p.text-hand.text-main {
-  font-size: 1.2rem;
-}
-
-/* ------------------ Pricing */
-p.price-details {
-  bottom: 0;
-  right: 0;
-  font-size: 1rem;
-}
-
-.price-card:hover {
-  z-index: 4;
-}
-
-.price-card:hover .details {
-  transform: rotate(14.03624deg) translate(0%, 10%) scale(1.3);
-}
-
-.pricing-list {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  transform-origin: top left;
-  transform: skewY(4.398705355deg);
-  max-width: 100%;
-  height: auto;
-  overflow: visible;
-}
-
-.price-tier-card {
-  background-color: var(--yellow-1);
-  max-width: 250px;
-  height: 220px;
-}
-
-section#prices {
-  max-width: 100%;
-  overflow: hidden;
-}
-
-/* ----------------- Contact */
-#contact {
-  max-width: 100%;
-  height: auto;
-  background: url("../images/soap-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-p.hours,
-a.email-add,
-.service-areas,
-a.phone-number,
-.contact-item > p {
-  font-size: 1rem;
-}
-
-.hours {
-  margin-top: 12px;
-  font-size: 1.2rem;
-  color: var(--dark-grey);
-}
-
-h3.info-item {
-  font-size: 1.351rem;
-}
-
-.info-item > h3 > i {
-  margin: 0px 5px;
-}
-
-.card.contact-card {
-  background-color: #fafafa30;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
-}
-
-p.price-details {
-  bottom: 0;
-  right: 5%;
-  font-size: 1.2em;
-}
-
-.price-card {
-  transform-origin: top left;
-  transform: skewY(-4.398705355deg) rotatez(-14.03624deg);
-  z-index: 1;
-  transition-property: z-index;
-  transition-duration: 0.3s;
-  max-width: 100%;
-  height: auto;
-}
-
-/* Pause Button */
-.pause-btn {
-  color: var(--navy);
-  font-size: 1.25rem;
-  background: transparent;
-  border-color: transparent;
-  margin: 0 0.5rem;
-  transition: var(--transition);
-  cursor: pointer;
-}
-
-.pause-btn:hover {
-  color: var(--yellow-hov);
-}
-
-
-/* ------------ Reviews */
-.reviews {
-  display: grid;
-  place-items: center;
-}
-
-q {
-  font-style: italic;
-  padding-bottom: 10px;
-}
-
-.img-container::after {
-  content: "\f10e";
-  position: fixed;
-  left: 0;
-  width: 2.5rem;
-  height: 2.5rem;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  transform: translateY(25%);
-  background: var(--navy);
-  color: var(--clr-white);
-}
-
-.img-container::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  bottom: 6rem;
-  right: -0.5rem;
-  border-radius: 50%;
-}
-
-#customer {
-  margin-bottom: 0.25rem;
-  font-family: var(--primary-font);
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-#service {
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  color: var(--clr-primary-5);
-  font-size: 1.35rem;
-  font-weight: 600;
-}
-
-#info {
-  margin-bottom: 0.75rem;
-}
-
-.prev-btn,
-.next-btn {
-  color: var(--navy);
-  font-size: 1.25rem;
-  background: transparent;
-  border-color: transparent;
-  margin: 0 0.5rem;
-  transition: var(--transition);
-  cursor: pointer;
-}
-
-.prev-btn:hover,
-.next-btn:hover {
-  color: var(--yellow-hov);
-}
-
-#reviews {
-  display: grid;
-  place-items: center;
-  margin-top: -50px;
-}
-
-.title {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.review {
-  padding: 1.5rem 2rem;
-  border-radius: var(--radius);
-  transition: var(--transition);
-  text-align: center;
-}
-
-#person-img {
-  width: 100%;
-  display: block;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  position: relative;
-}
-
-.img-container::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f10e";
-  position: absolute;
-  left: 0;
-  width: 2.3rem;
-  height: 2.21rem;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  margin-left: -12px;
-  margin-top: -35px;
-  opacity: 0.89754;
-  transform: translateY(25%);
-  color: var(--light);
-}
-.img-container::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: none;
-  position: absolute;
-  top: -0.25rem;
-  right: -0.5rem;
-  border-radius: 50%;
-}
-
-
-.typewriter-container {
-  display: flex;
-  justify-content: start;
-  align-items: start;
-}
-
-.typewriter-text {
-    font-family: "Just Another Hand", cursive;
-  font-weight: 400;
-  background-color: var(--yellow-hov);
-  background-clip: text;
-  color: transparent;
-  text-shadow: rgba((8, 8, 8, 0.5)) 0px 3px 3px;
-  overflow: hidden; /* Ensures text is hidden until typed */
-  white-space: nowrap; /* Prevents text from wrapping */
-  margin: 0 auto; /* Centers the text horizontally */
-  border-right: 2px solid var(--yellow-hov); /* Cursor */
-  letter-spacing: 1.25px;
-  margin-bottom: 20px;
-  animation: typing 12s steps(50, end) infinite,
-  blink-caret 0.75s step-end infinite; /* Blinking cursor */
-}
-
-/* Keyframes for the typing animation */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* Keyframes for the blinking cursor animation */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: var(--yellow-hov);
-  }
-  100% {
-    border-color: transparent;
-  } /* Make cursor invisible at halfway point */
-}
-
 /* ---------------- Hero */
 .banner {
-  /* Restricts the visible area of the sliding text */
   max-width: 100%;
   position: absolute;
   width: fit-content;
   height: auto;
   overflow: hidden;
-  white-space: nowrap; /* Keeps text on a single line */
+  white-space: nowrap;
   background-color: none;
   padding: 10px 0;
   font-family: var(--primary-font);
@@ -668,9 +289,20 @@ h3#hero-start {
   font-size: 1.5rem;
 }
 
+.hero-btns {
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 100;
+}
+
 .hero-icon {
   font-size: 1.2rem;
   margin: 5px;
+}
+
+#heroTitleText {
+  text-transform: uppercase;
+  letter-spacing: -10;
 }
 
 .img-wrapper {
@@ -699,7 +331,6 @@ img#logoImg {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15),
     inset 0 5px 15px rgba(255, 255, 255, 0.5);
   mix-blend-mode: screen;
-
   animation: rise 12s infinite ease-in;
   animation-delay: -12s !important;
 }
@@ -908,6 +539,195 @@ img#logoImg {
   }
 }
 
+/* --------------- About */
+.about-text {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.251px;
+}
+
+.lead-text {
+  line-height: normal;
+  padding-bottom: 2.5px;
+}
+
+p.text-hand.text-main {
+  font-size: 1.2rem;
+}
+
+/* ------------ Reviews */
+.reviews {
+  display: grid;
+  place-items: center;
+}
+
+q {
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
+#reviews {
+  display: grid;
+  place-items: center;
+  margin-top: -50px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.review {
+  padding: 1.5rem 2rem;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  text-align: center;
+}
+
+.img-container {
+  position: relative;
+  background-color: var(--dark-transparent);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+#person-img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+
+.img-container::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f10e";
+  position: absolute;
+  left: 0;
+  width: 2.3rem;
+  height: 2.21rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  margin-left: -12px;
+  margin-top: -35px;
+  opacity: 0.89754;
+  transform: translateY(25%);
+  background-color: var(--dark-transparent);
+  color: var(--light);
+}
+
+.img-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: none;
+  position: absolute;
+  top: -0.25rem;
+  right: -0.5rem;
+  border-radius: 50%;
+}
+
+#customer {
+  margin-bottom: 0.25rem;
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#service {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: var(--clr-primary-5);
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+#info {
+  margin-bottom: 0.75rem;
+}
+
+.prev-btn,
+.next-btn {
+  color: var(--navy);
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  color: var(--yellow-hov);
+}
+
+/* Pause Button */
+.pause-btn {
+  color: var(--navy);
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.pause-btn:hover {
+  color: var(--yellow-hov);
+}
+
+.typewriter-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.typewriter-text {
+  font-family: "Just Another Hand", cursive;
+  font-weight: 400;
+  background-color: var(--yellow-hov);
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba((8, 8, 8, 0.5)) 0px 3px 3px;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  border-right: 2px solid var(--yellow-hov);
+  letter-spacing: 1.25px;
+  margin-bottom: 20px;
+  animation: typing 12s steps(50, end) infinite,
+  blink-caret 0.75s step-end infinite;
+}
+
+/* Keyframes for the typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Keyframes for the blinking cursor animation */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: var(--yellow-hov);
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
 /* ------------------ Pricing */
 h3.plan,
 p.price-details,
@@ -927,12 +747,50 @@ p.price-details {
   font-size: 1.2em;
 }
 
-/* ----------------- Contact */
-section#prices {
+.price-card:hover {
+  z-index: 4;
+}
+
+.price-card:hover .details {
+  transform: rotate(14.03624deg) translate(0%, 10%) scale(1.3);
+}
+
+.pricing-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  transform-origin: top left;
+  transform: skewY(4.398705355deg);
+  max-width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.price-tier-card {
+  background-color: var(--yellow-1);
+  max-width: 250px;
+  height: 220px;
+}
+
+.price-card {
+  transform-origin: top left;
+  transform: skewY(-4.398705355deg) rotatez(-14.03624deg);
+  z-index: 1;
+  transition-property: z-index;
+  transition-duration: 0.3s;
   max-width: 100%;
   height: auto;
 }
 
+h3.price-tier {
+  text-transform: uppercase;
+}
+
+section#prices {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* ----------------- Contact */
 #contact {
   max-width: 100%;
   height: auto;
@@ -950,16 +808,26 @@ a.phone-number,
   font-size: 1rem;
 }
 
-p.price-details {
-  bottom: 0;
-  right: 5%;
-  font-size: 1.2em;
+.hours {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  color: var(--dark-grey);
 }
 
-h3.price-tier {
-  text-transform: uppercase;
+h3.info-item {
+  font-size: 1.351rem;
 }
 
+.info-item > h3 > i {
+  margin: 0px 5px;
+}
+
+.card.contact-card {
+  background-color: #fafafa30;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
 
 /* Back to Top Button */
 .back-to-top {
@@ -1010,8 +878,8 @@ h3.price-tier {
     height: auto;
   }
   .about-text {
-  font-size: 16px;
-}
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 820px) {
@@ -1021,13 +889,11 @@ h3.price-tier {
   h3#hero-start {
     font-size: 2.5rem;
     text-align: center;
+    margin: 30px auto;
   }
   .contact-item {
     font-size: 1.351rem;
     text-align: center;
-  }
-  h3#hero-start {
-    margin: 30px auto;
   }
   details {
     position: absolute;
